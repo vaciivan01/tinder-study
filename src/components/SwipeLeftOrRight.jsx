@@ -1,0 +1,93 @@
+import React, { useState, useEffect } from 'react'
+import { Button } from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleVisibility, setAnswer } from "../hideSlice";
+
+
+function SwipeLeftOrRight(props) {
+  const showElement = useSelector(state => state.hide.shownElements);
+  const questionElement = useSelector(state => state.hide.questions);
+  const dbToChose = useSelector(state => state.hide.dbPics);
+  let db = questionElement.pol == "Muški" ? dbToChose["Ženski"] : dbToChose["Muški"];
+  const [showCard, setShowCard] = useState(db);
+  const [swiperResults, setswiperResults] = useState({});
+
+  useEffect(() => {
+    const shuffled  = questionElement.pol == "Muški" ? shuffle(dbToChose["Ženski"]) : shuffle(dbToChose["Muški"])
+    setShowCard( shuffled);
+  }, [questionElement.pol]);
+
+
+  const context = props.content
+  const key = props.keyForContext
+  const dispatch = useDispatch();
+
+  function setSwipe(code, direction) {
+
+    swiperResults[code] = direction;
+    setswiperResults(swiperResults);
+    if (showCard.length === 1) {
+      dispatch(setAnswer({ keyForQuestion: key, value: swiperResults }))
+      dispatch(toggleVisibility({ state: showElement, next: "perSwipe", current: key }))
+    }
+    const yty = showCard.filter(card => !card.url.includes(code))
+    setShowCard(yty)
+  }
+
+  function customTinderCard(character) {
+    let code = character.url.replace("/images/muska_lica/", "").replace("/images/zenska_lica/", "").replace(".jpg", "")
+        
+    return (
+    <div>
+    <div className="tinderCards__cardContainer">
+        <div>
+          <div
+            style={{ backgroundImage: `url(${character.url})` }}
+            className="cardCustom"
+          >
+          </div>
+        </div>
+    </div>
+      <Button variant="outline-danger" className='swipeButton' onClick={() => setSwipe(code, 'dislike')}><img src="/images/cards/cross.png" /></Button>
+      <Button variant="outline-success" className='swipeButton' onClick={() => setSwipe(code, 'like')}><img src="/images/cards/tick.png" /></Button>
+  </div>
+    )
+  }
+
+  function shuffle(arrayS) {
+    let array = [...arrayS];
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
+  const Tinder = () => {
+    return (
+      <div className='cardContainer'>
+          {customTinderCard(showCard[0])}
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      {(showElement[key] && db != "") ?
+        <Tinder /> : null
+      }
+    </div>
+  )
+}
+
+export default SwipeLeftOrRight;

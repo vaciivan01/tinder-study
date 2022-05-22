@@ -1,0 +1,113 @@
+{
+    "ponasanje": {
+        "type": "continue",
+        "headerText": "Ponašanje na aplikaciji Tinder",
+        "bodyText": "Dobro došli!\n\n Pred vama se nalazi studija kojom se ispituje heteresoksualno ponašanje na aplikaciji Tinder.\n\nIstraživanje je deo master rada na Odeljenju za psihologiju, Filozofskog fakulteta, Univerziteta u Beogradu. Ukoliko imate bilo kakvih dodatnih pitanja ili dilema u vezi sa istraživanjem možete nam pisati na email: majamadarev@gmail.com\n\nU ovom istraživanju nema tačnih i netačnih odgovora i nisu Vam potrebna nikakva posebna znanja da biste popunili upitnik. Vaše učešće u ovom istraživanju je dobrovoljno i u svakom trenutku iz bilo kog razloga možete odustati od daljeg učešća. Vaši odgovori će biti korišćeni isključivo u zbirnom obliku u naučne svrhe i niko sa strane neće moći da uspostavi vezu između vaših ličnih podataka i rezultata ovog istraživanja.\n\nZa popunjavanje upitnika će vam biti potrebno manje oko 20 minuta.\n\nZahvaljujemo Vam se na učešću u istraživanju!\n\nZa prelazak na narednu stranu kliknite na strelicu ispod.",
+        "next": "saglasnost"
+    },
+    "saglasnost": {
+        "type": "continue",
+        "headerText": "Saglasnost za učestvovanje u istraživanju",
+        "bodyText": "Saglasna/an sam da učestvujem u ovom istraživanju koji se izvodi u okviru Odeljenja za Psihologiju Filozofskog Fakulteta u Beogradu. Potvrđujem da mi je objašnjeno šta se od mene zahteva u istraživačkom zadatku. Shvatam da učestvovanje u ovom istraživanju ni na koji način neće da mi nanese štetu, da bude ugrožavajuće, da me izloži neprijatnostima, niti će se tokom eksperimenta koristiti tehnike obmanjivanja. Razumem da ako nisam zadovoljna/an tretmanom, u svakom trenutku mogu da napustim istraživanje bez dodatnih objašnjenja i štete po mene. Jasno mi je da je istraživanje anonimno i da će moji podaci biti korišćeni isključivo u naučne svrhe, te da niko sa strane neće moći da uspostavi vezu između mene lično i mog postignuća u istraživanju. Predočeno mi je da se o ovom istraživanju dodatno mogu informisati pre početka eksperimenta, kao i po završenom eksperimentu.\n\nAko ste saglasni da učestvujete u istraživanju pririsnice strelicu za dalje kako biste počeli sa istraživanjem.",
+        "next": "nekadaKoristiliTinder"
+    },
+    "endOfTest": {
+        "type": "continue",
+        "headerText": "Hvala sto ste ucestvovali",
+        "bodyText": "",
+        "next": ""
+    },
+    "nekadaKoristiliTinder": {
+        "type": "radio",
+        "headerText": "Da li ste nekada koristili aplikaciju Tinder?",
+        "options": [
+            {
+                "text": "Jesam",
+                "action": ""
+            },
+            {
+                "text": "Nisam",
+                "action": "exit"
+            }
+        ],
+        "next": "izasliTinder"
+    },
+    "izasliTinder": {
+        "type": "radio",
+        "headerText": "Da li ste nekada izašli na sastanak sa osobom koju ste upoznali na Tinderu?",
+        "options": [
+            {
+                "text": "Jesam",
+                "action": ""
+            },
+            {
+                "text": "Nisam",
+                "action": ""
+            }
+        ],
+        "next": "orijentacija"
+    },
+    "orijentacija": {
+        "type": "radio",
+        "headerText": "Kako biste opisali Vašu seksualnu orijentaciju?",
+        "options": [
+            {
+                "text": "Heteroseksualan/na sam",
+                "action": ""
+            },
+            {
+                "text": "Homoseksualan/na sam",
+                "action": "exit"
+            },
+            {
+                "text": "Biseksualan/na sam",
+                "action": "exit"
+            },
+            {
+                "text": "Drugo",
+                "action": "exit"
+            }
+        ],
+        "next": "instrukcije"
+    },
+    "instrukcije": {
+        "type": "continue",
+        "headerText": "Instrukcije",
+        "bodyText": "Sada ćemo Vam prikazati 5 osobina. Vaš zadatak će biti da procenite u kojoj meri su Vam date osobine važne prilikom odabira partnera, to jest u kojoj meri je za Vas važno da Vaš partner poseduje date osobine. Skala će biti izražena od 1 (ova osobina mi uopšte nije važna prilikom odabira partnera) do 7 (ova osobina mi je veoma važna prilikom odabira partnera).\n\nTrudite se da koristite različite brojeve na skali kako biste što preciznije opisali svoj doživljaj.\n\nKliknite na strelicu ispod kako biste počeli sa procenom.",
+        "next": "osobine"
+    },
+    "osobine": {
+        "type": "multiradio",
+        "headerText": "U kojoj meri su Vam sledeće osobine važne prilikom odabira partnera?",
+        "multiRadioOptions": {
+            "levels": 7,
+            "traits": ["Inteligencija", "Ambicioznost", "Dobra mogućnost zarađivanja", "Zdravlje", "Poštovanje porodičnih vrednosti", "Dobrota"]
+        },
+        "next": "godiste"
+    },
+    "godiste": {
+        "type": "input",
+        "headerText": "Koliko imate godina (upišite brojevima)?",
+        "next": "pol"
+    },
+    "pol": {
+        "type": "radio",
+        "headerText": "Kog ste pola?",
+        "options": [{"text": "Muški", "action": ""},{"text": "Ženski", "action": ""},{"text": "Ne želim da se izjasnim", "action": "exit"}],
+        "next": "instrukcije2"
+    },
+    "instrukcije2": {
+        "type": "continue",
+        "headerText": "Instrukcije?",
+        "bodyText": "U ovom delu istraživanja Vaš zadatak će biti da svajpujete profile na aplikaciji Tinder kako to i inače radite. Profil možete svajpovati desno, odnosno kliknuti lajk ili svajpovati levo, odnosno kliknuti nope. Svi profili će imati samo jednu fotografiju.\n\nOvo nije prava Tinder aplikacija, tako da vaš profil neće biti prikazan osobama koje ćete videti tokom ovog istraživanja.\n\nKliknite na strelicu ispod kako biste počeli sa procenom.",
+        "next": "tinderPictures"
+    },
+    "tinderPictures": {
+        "type": "swipe",
+        "next": "perTinderPictures"
+    },
+    "perTinderPictures": {
+        "type": "perSwipe",
+        "next": ""
+    }
+}

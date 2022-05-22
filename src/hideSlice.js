@@ -77,25 +77,25 @@ const initialState = {
     showFinal: {
       0: true,
       1: false,
-      // 2: false,
-      // 3: false,
-      // 4: false,
-      // 5: false,
-      // 6: false,
-      // 7: false,
-      // 8: false,
-      // 9: false,
-      // 10: false,
-      // 11: false,
-      // 12: false,
-      // 13: false,
-      // 14: false,
-      // 15: false,
-      // 16: false,
-      // 17: false,
-      // 18: false,
-      // 19: false,
-      // 20: false,
+      2: false,
+      3: false,
+      4: false,
+      5: false,
+      6: false,
+      7: false,
+      8: false,
+      9: false,
+      10: false,
+      11: false,
+      12: false,
+      13: false,
+      14: false,
+      15: false,
+      16: false,
+      17: false,
+      18: false,
+      19: false,
+      20: false,
     },
     dbPics: {
         Muški: [
@@ -105,63 +105,63 @@ const initialState = {
             {
               url: '/images/muska_lica/l15.jpg'
             },
-            // {
-            //   url: '/images/muska_lica/l19.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/l20.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/l25.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/l30.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/l33.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/n1.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/n6.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/n9.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/n14.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/n17.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/n23.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/n24.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/r4.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/r7.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/r12.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/r16.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/r21.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/r22.jpg'
-            // },
-            // {
-            //   url: '/images/muska_lica/r28.jpg'
-            // }
+            {
+              url: '/images/muska_lica/l19.jpg'
+            },
+            {
+              url: '/images/muska_lica/l20.jpg'
+            },
+            {
+              url: '/images/muska_lica/l25.jpg'
+            },
+            {
+              url: '/images/muska_lica/l30.jpg'
+            },
+            {
+              url: '/images/muska_lica/l33.jpg'
+            },
+            {
+              url: '/images/muska_lica/n1.jpg'
+            },
+            {
+              url: '/images/muska_lica/n6.jpg'
+            },
+            {
+              url: '/images/muska_lica/n9.jpg'
+            },
+            {
+              url: '/images/muska_lica/n14.jpg'
+            },
+            {
+              url: '/images/muska_lica/n17.jpg'
+            },
+            {
+              url: '/images/muska_lica/n23.jpg'
+            },
+            {
+              url: '/images/muska_lica/n24.jpg'
+            },
+            {
+              url: '/images/muska_lica/r4.jpg'
+            },
+            {
+              url: '/images/muska_lica/r7.jpg'
+            },
+            {
+              url: '/images/muska_lica/r12.jpg'
+            },
+            {
+              url: '/images/muska_lica/r16.jpg'
+            },
+            {
+              url: '/images/muska_lica/r21.jpg'
+            },
+            {
+              url: '/images/muska_lica/r22.jpg'
+            },
+            {
+              url: '/images/muska_lica/r28.jpg'
+            }
           ],
           Ženski : [
             {
@@ -170,63 +170,63 @@ const initialState = {
             {
                 url: '/images/zenska_lica/l12.jpg'
             },
-            // {
-            //     url: '/images/zenska_lica/l14.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/l16.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/l17.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/l23.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/l25.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/n4.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/n8.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/n9.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/n10.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/n19.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/n24.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/n33.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/r1.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/r11.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/r15.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/r22.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/r26.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/r31.jpg'
-            // },
-            // {
-            //     url: '/images/zenska_lica/r32.jpg'
-            // }
+            {
+                url: '/images/zenska_lica/l14.jpg'
+            },
+            {
+                url: '/images/zenska_lica/l16.jpg'
+            },
+            {
+                url: '/images/zenska_lica/l17.jpg'
+            },
+            {
+                url: '/images/zenska_lica/l23.jpg'
+            },
+            {
+                url: '/images/zenska_lica/l25.jpg'
+            },
+            {
+                url: '/images/zenska_lica/n4.jpg'
+            },
+            {
+                url: '/images/zenska_lica/n8.jpg'
+            },
+            {
+                url: '/images/zenska_lica/n9.jpg'
+            },
+            {
+                url: '/images/zenska_lica/n10.jpg'
+            },
+            {
+                url: '/images/zenska_lica/n19.jpg'
+            },
+            {
+                url: '/images/zenska_lica/n24.jpg'
+            },
+            {
+                url: '/images/zenska_lica/n33.jpg'
+            },
+            {
+                url: '/images/zenska_lica/r1.jpg'
+            },
+            {
+                url: '/images/zenska_lica/r11.jpg'
+            },
+            {
+                url: '/images/zenska_lica/r15.jpg'
+            },
+            {
+                url: '/images/zenska_lica/r22.jpg'
+            },
+            {
+                url: '/images/zenska_lica/r26.jpg'
+            },
+            {
+                url: '/images/zenska_lica/r31.jpg'
+            },
+            {
+                url: '/images/zenska_lica/r32.jpg'
+            }
         ]
     }
 }

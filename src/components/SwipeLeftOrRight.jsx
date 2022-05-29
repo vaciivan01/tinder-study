@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleVisibility, setAnswer } from "../hideSlice";
 
@@ -38,19 +38,16 @@ function SwipeLeftOrRight(props) {
     let code = character.url.replace("/images/muska_lica/", "").replace("/images/zenska_lica/", "").replace(".jpg", "")
         
     return (
-    <div>
-    <div className="tinderCards__cardContainer">
-        <div>
-          <div
-            style={{ backgroundImage: `url(${character.url})` }}
-            className="cardCustom"
-          >
-          </div>
-        </div>
-    </div>
-      <Button variant="outline-danger" className='swipeButton' onClick={() => setSwipe(code, 'dislike')}><img src="/images/cards/cross.png" /></Button>
-      <Button variant="outline-success" className='swipeButton' onClick={() => setSwipe(code, 'like')}><img src="/images/cards/tick.png" /></Button>
-  </div>
+
+      <Card style={{ width: '20rem' }} className="text-center">
+        <Card.Img variant="top" src={character.url} />
+        <Card.Body>
+        <Card.Title>
+             <Button variant="outline-danger" className='swipeButton' onClick={() => setSwipe(code, 'dislike')}><img src="/images/cards/cross.png" /></Button>
+              <Button variant="outline-success" className='swipeButton' onClick={() => setSwipe(code, 'like')}><img src="/images/cards/tick.png" /></Button>
+       </Card.Title>
+        </Card.Body>
+      </Card>
     )
   }
 
@@ -75,7 +72,7 @@ function SwipeLeftOrRight(props) {
 
   const Tinder = () => {
     return (
-      <div className='cardContainer'>
+      <div className=''>
           {customTinderCard(showCard[0])}
       </div>
     )
